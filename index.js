@@ -23,3 +23,13 @@ for (let i = 1; i <= 15; i++) {
         console.log(i);
     }
 }
+
+
+//TODO: Palindrome Check: Write a function to determine if a given string is a palindrome -- Example radar
+
+function isPalindrome(str) {
+    let reversed = str.toLowerCase().split('').reverse().join('');
+    return str === reversed;
+}
+
+console.log(isPalindrome("radar"));
