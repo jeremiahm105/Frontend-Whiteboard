@@ -34,9 +34,20 @@ function isPalindrome(str) {
 
 console.log(isPalindrome("radar"));
 
-//TODO:Find the missing number: Given an array containing numbers from 1 to N with one number missing find the missing number
+// Write a program that prints the numbers from 1-100. For multiples of three print Fizz, for multiples of 5 print Buzz for multiples of 3 and 5 print FizzBuzz **Complete using a switch statement
 
-function isPalindrome1 (str2) {
-    let reversedStrPal = str2.toLowerCase().split(" ").join(" ");
-    return str2 === reversedStrPal
+for (let k = 1; k <50; k++) {
+    switch(true) {
+        case k % 3 ===0 && k % 5 === 0:
+            console.log("FizzBuzz")
+            break;
+        case k % 3 === 0:
+            console.log("Fizz")
+            break;
+        case k % 5 === 0:
+            console.log("Buzz")
+            break;
+        default:
+            console.log("k")
+    }
 }
