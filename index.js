@@ -33,3 +33,10 @@ function isPalindrome(str) {
 }
 
 console.log(isPalindrome("radar"));
+
+//TODO:Find the missing number: Given an array containing numbers from 1 to N with one number missing find the missing number
+
+function isPalindrome1 (str2) {
+    let reversedStrPal = str2.toLowerCase().split(" ").join(" ");
+    return str2 === reversedStrPal
+}
