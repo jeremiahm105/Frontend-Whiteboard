@@ -51,3 +51,19 @@ for (let k = 1; k <50; k++) {
             console.log("k")
     }
 }
+
+// Define a function named that converts converts hours to seconds that takes in one input Hours. Return the conversation of the number of hours into total seconds. If the input is not numeric or a numeric string, fucntion should return, false.
+
+function convertHourToSec(hours) {
+	if (typeof hours !== "number" && (typeof hours !== "string" || !parseInt(hours))) {
+		return false;
+	}
+	let numberInHours = parseInt(hours);
+	if (isNaN(numberInHours) || numberInHours < 0) {
+		return false;
+	} else {
+		return numberInHours * 3600
+	}
+}
+
+
