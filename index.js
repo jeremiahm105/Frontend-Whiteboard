@@ -44,23 +44,24 @@ console.log("-----------------------------")
 
 // Write a program that prints the numbers from 1-100. For multiples of three print Fizz, for multiples of 5 print Buzz for multiples of 3 and 5 print FizzBuzz **Complete using a switch statement
 
-for (let k = 1; k <=30; k++) {
+for (let j = 1; j <= 15; j++) {
     switch(true) {
-        case k % 3 === 0 && k % 5 === 0:
-            console.log("FizzBuzz")
+        case j % 3 === 0 && j % 5 === 0:
+            console.log("Fizzer-Buzzer")
             break;
-        case k % 3 === 0:
-            console.log("Fizz")
+        case j % 3 === 0:
+            console.log("Fizzer")
             break;
-        case k % 5 === 0:
-            console.log("Buzz")
+        case j % 5 === 0:
+            console.log("Buzzer")
             break;
         default:
-            console.log("k")
+            console.log(j)
     }
 }
 
 console.log("-----------------------------")
+
 
 
 // Define a function named that converts converts hours to seconds that takes in one input Hours. Return the conversation of the number of hours into total seconds. If the input is not numeric or a numeric string, fucntion should return, false.
