@@ -66,4 +66,16 @@ function convertHourToSec(hours) {
 	}
 }
 
+// Write a function named getLowestNumber that takes in 3 arguments. If all 3 inputs are numbers or numeric strings, then return the lowest number. If any of the 3 inputs is missing or non-numeric, then return false.
+
+function getLowestNumber(input1, input2, input3){
+	let num1 = parseInt(input1);
+	let num2 = parseInt(input2);
+	let num3 = parseInt(input3);
+	if(isNaN(num1) || isNaN(num2) || isNaN(num3)){
+		return false;
+	} else {
+		return Math.min(input1, input2, input3);
+	}
+}
 
